@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me | Applied Business & Technology</title>
+    <style>
+        /* General Styles */
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            color: #333;
+            background-color: #f4f4f9;
+        }
+
+        /* Navigation Styles */
+        nav {
+            background: #512888; /* K-State Purple */
+            padding: 1rem 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin-left: 20px;
+            font-weight: bold;
+        }
+
+        /* Container */
+        .container {
+            max-width: 900px;
+            margin: 2rem auto;
+            padding: 2rem;
+            background: white;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+            border-radius: 8px;
+        }
+
+        /* Header/Intro */
+        header h1 {
+            color: #512888;
+            margin-bottom: 0.5rem;
+        }
+
+        .subtitle {
+            font-style: italic;
+            color: #666;
+            margin-bottom: 2rem;
+        }
+
+        /* Skill Grid */
+        .skills {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1.5rem;
+            margin-top: 2rem;
+        }
+
+        .skill-category {
+            padding: 1rem;
+            border-left: 4px solid #512888;
+            background: #f9f9f9;
+        }
+
+        .skill-category h3 {
+            margin-top: 0;
+            font-size: 1.1rem;
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 3rem;
+            padding: 1rem;
+            font-size: 0.9rem;
+            color: #777;
+        }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <div style="color: white; font-weight: bold; font-size: 1.2rem;">Portfolio</div>
+        <div>
+            <a href="/home.html">Home</a>
+            <a href="/about.html">About</a>
+             <a href="/contact.html">Contact</a>
+        </div>
+    </nav>
+
+    <main class="container">
+        <header>
+            <h1>About Me</h1>
+            <p class="subtitle">Applied Business & Technology Student @ Kansas State University</p>
+        </header>
+
+        <section id="bio">
+            <p>
+                I am a motivated and detail-oriented student at <strong>Kansas State University</strong>, 
+                dedicated to bridging the gap between technical infrastructure and business leadership. 
+                In today's technology-driven world, I seek opportunities to combine my technical proficiency 
+                with creative problem-solving to drive organizational success.
+            </p>
+            <p>
+                My background includes a strong foundation in <strong>troubleshooting and technical support</strong>, 
+                with a focus on creating efficient, user-centered digital environments. I am passionate about 
+                optimizing performance—whether that is at the server level or the user interface level.
+            </p>
+        </section>
+
+        <hr>
+
+        <section id="expertise">
+            <h2>Technical Expertise</h2>
+            <div class="skills">
+                <div class="skill-category">
+                    <h3>Development</h3>
+                    <p>HTML, CSS, SQL, Backend Development</p>
+                </div>
+                <div class="skill-category">
+                    <h3>Infrastructure</h3>
+                    <p>Network Administration, Performance Optimization</p>
+                </div>
+                <div class="skill-category">
+                    <h3>Design & Strategy</h3>
+                    <p>User-Centered Design, Tech Leadership, Support Systems</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 | Built with HTML & CSS</p>
+    </footer>
+
+</body>
+</html>

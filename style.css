@@ -1,0 +1,208 @@
+/* General Setup */
+body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    margin: 0;
+    line-height: 1.6;
+    background-color: #f0f2f5;
+    color: #333;
+}
+
+/* Navigation */
+nav {
+    background: #512888; /* K-State Purple */
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 10%;
+    align-items: center;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+}
+
+nav ul li { margin-left: 20px; }
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Container & Layout */
+.container {
+    max-width: 1000px;
+    margin: 2rem auto;
+    padding: 0 20px;
+}
+
+.intro {
+    text-align: center;
+    background: white;
+    padding: 3rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    margin-bottom: 2rem;
+}
+
+.social-links img {
+    width: 40px;
+    vertical-align: middle;
+    transition: 0.3s;
+}
+
+.social-links img:hover { transform: scale(1.1); }
+
+.github-link {
+    margin-left: 15px;
+    color: #512888;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+/* Grid for Hobbies and Qualities */
+.grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.card {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
+
+/* Footer */
+footer {
+    background: #333;
+    color: white;
+    text-align: center;
+    padding: 2rem 0;
+    margin-top: 4rem;
+}
+
+.footer-content p { margin: 5px 0; }
+
+/* Contact Form Styling */
+.contact-form label {
+    font-weight: bold;
+    font-size: 0.9rem;
+    color: #555;
+}
+
+.contact-form input:focus, .contact-form textarea:focus {
+    outline: 2px solid #512888;
+    border: none;
+}
+
+.contact-form button:hover {
+    background: #3d1e66 !important;
+    transition: 0.3s;
+}
+
+hr {
+    border: 0;
+    border-top: 1px solid #eee;
+    margin: 20px 0;
+}
+/* Update your existing style.css with these contact-specific styles */
+
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: #f8f9fa;
+    margin: 0;
+}
+
+.contact-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1.5fr; /* Makes the form side wider */
+    gap: 30px;
+    margin-top: 2rem;
+}
+
+.contact-card {
+    background: #ffffff;
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+}
+
+.info-card h2, .form-card h2 {
+    color: #512888;
+    margin-top: 0;
+}
+
+/* LinkedIn Link Styling */
+.linkedin-cta {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: #512888;
+    font-weight: 600;
+    margin-top: 15px;
+    transition: transform 0.2s;
+}
+
+.linkedin-cta img {
+    width: 40px;
+    margin-right: 12px;
+}
+
+.linkedin-cta:hover {
+    transform: translateX(5px);
+}
+
+/* Form Elements */
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 600;
+    color: #444;
+}
+
+.modern-form input, .modern-form textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 1rem;
+    box-sizing: border-box; /* Ensures padding doesn't break width */
+}
+
+.modern-form input:focus, .modern-form textarea:focus {
+    outline: none;
+    border-color: #512888;
+    box-shadow: 0 0 0 3px rgba(81, 40, 136, 0.1);
+}
+
+.submit-btn {
+    background: #512888;
+    color: white;
+    padding: 14px 28px;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-weight: 700;
+    cursor: pointer;
+    width: 100%;
+    transition: background 0.3s;
+}
+
+.submit-btn:hover {
+    background: #3d1e66;
+}
+
+/* Responsive for Mobile */
+@media (max-width: 768px) {
+    .contact-wrapper {
+        grid-template-columns: 1fr;
+    }
+}
